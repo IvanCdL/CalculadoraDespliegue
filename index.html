@@ -51,6 +51,12 @@
                     case '^':
                         resultadoElement.value = Math.pow(num1, num2);
                         break;
+                    case 'sqrt':
+                        resultadoElement.value = Math.sqrt(num1);
+                        break;
+                    case '%':
+                        resultadoElement.value = num1 % num2;
+                        break;
                     default:
                         resultadoElement.value = "Operación no válida";
                         break;
