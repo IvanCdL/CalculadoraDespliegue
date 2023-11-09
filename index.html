@@ -3,14 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practica </title>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
 </head>
 <body>
@@ -56,6 +48,9 @@
                             resultadoElement.value = "Error: División por cero";
                         }
                         break;
+                    case '^':
+                        resultadoElement.value = Math.pow(num1, num2);
+                        break;
                     default:
                         resultadoElement.value = "Operación no válida";
                         break;
@@ -65,8 +60,5 @@
             }
         }
     </script>
-</body>
-</html>
-
 </body>
 </html>
